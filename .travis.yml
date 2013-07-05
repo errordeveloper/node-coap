@@ -3,5 +3,6 @@ node_js:
   - 0.11
   - 0.10
   - 0.8
-env: "CC=clang CXX=clang++"
-env: "CC=gcc CXX=g++"
+env:
+  - "CC=clang CXX=clang++"
+  - "CC=gcc CXX=g++"
