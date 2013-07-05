@@ -15,6 +15,14 @@ exports['Equivalence mapping'] = function (test) {
   test.deepEqual( packet_parsed, packet_reparsed,
       'Parsed objects from original packet and reconstructed packet should be consistent' );
 
+  test.equal( packet_parsed.code, 1 );
+  test.equal( packet_parsed.tt, 0 );
+  test.equal( packet_parsed.msgid, 43636 );
+  test.equal( packet_parsed.version, 1 );
+  test.equal( packet_parsed.token[0], 's' );
+  test.equal( packet_parsed.options['3'], 'concord.orion.deepdarc.com' );
+  test.equal( packet_parsed.options['11'][0], 'security' );
+
   test.done();
 
 }
