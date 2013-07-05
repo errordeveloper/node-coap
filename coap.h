@@ -34,6 +34,7 @@
 #include <stddef.h>
 #include <string.h>
 #include <stdint.h>
+#include <stdlib.h>
 
 #if CONTIKI
 #include "contiki.h"
